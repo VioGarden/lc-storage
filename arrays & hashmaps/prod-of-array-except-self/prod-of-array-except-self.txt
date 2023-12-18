@@ -1,0 +1,2 @@
+appraoch
+1. create bucket, iterate over array

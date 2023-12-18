@@ -1,0 +1,9 @@
+approaches
+1. bucket sort, (instead of options for all elements i|count, options for length of array counts|list)
+    T: 
+
+2. max heap (key is number of occurances), then pop from heap
+    T: O(k log n)
+
+3. hashmap of each array, then sort in ascending order
+    T: O(n log n)

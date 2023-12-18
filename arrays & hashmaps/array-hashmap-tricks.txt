@@ -1,0 +1,142 @@
+1. Initializing a set (*cannot have duplicates*)
+    -hashSet = set() <-- this is a set()   {"stuff", "goes", "here"}
+    -hashDict =/= {} <-- this is a dictionary
+    -hashDict, hashDict = {}, {}  <-- two dictionaries
+
+2. hashSet of just ONE hash and MANY values
+    -if i in hashSet:    -- checks if value i exists in hashset
+    -hashSet.add(value)   -- adds value to hashset
+    -hashSet.remove(value)  -- removes value from hashset
+
+3. hashDict of MANY hashes and MANY values
+    -hashDict[key] = value
+    -hashDict[key] = 1 + hashDict.get(key, 0)
+    -for key in hashDict:
+
+4. comparing two hashDicts of MANY hashes and MANY values
+    -hashDict[key] != hashDict.get(key, 0)
+
+5. enumerate(variable) --> (index, value)
+
+6. from collections import defaultdict(type)
+    -x = defaultdict(type)
+    -defaultdict() is dict() except if no error if calls a key that isnt in the set
+    -x is a dictionary, {key: value}
+    -defaultdict(set) --> hashDict of sets {key:{set}, key:{set}, key:{set}}
+
+7. hashDict key cannot be a list, must be a tuple (immutable)
+    -hashDict value can be a list
+    -hashDict[tuple(list)].append(list)
+        -hashDict = {[1,2,4,5,2,5,32,4]: ["example","of","list"]}
+    -use tuple when necessary for a key, dont forget they exist
+
+7b. hashDict = defaultdict(list)
+    -hashDict[key].append(value/list/set/whatever you can add to dictionary)
+    -***only scenario (so far) where can use append on a HashDict --> hashMap = defaultdict(list)
+        -append because appending to a dictionary
+
+7c. hashDict = defaultdict(set)
+    -hashDict[key].add(value)
+        -use .add(value) (even if appending to a set)
+
+8. hashDict.values()  --> returns a list with the values of each key separated by a comma
+        -if two of the same keys exist, the value of the key earlier in the list is disregarded and replaced by value of later same key
+    -hashDict = {1:2,4:3,2:34,3:5,2:99}
+    -hashDict.values() --> dict_values([2, 3, 99, 5])
+
+9. bucket sort
+    -[[] for i in range(len(values))]
+
+10. arrays
+    -[0]*26 --> array of [0,0,0...0]
+    -array[index] += 1
+
+11. ord("a") --> unicode/ascii value
+   chr(97) --> unicode/ascii to regular
+   unicode is like wide ascii, ascii has 0-127 vs unicode/utf-8/16/32 having more
+
+12. for key, value in hashDict.items()
+
+13. step1: hashDict an array
+    step2: bucketsort the hashDict
+
+14. range(len(array)) backwards
+    -for i in range(len(array) -1, -1, -1)
+
+15. good to think ahead, think of what arrays/hashMaps might need, initialize them
+
+16. continue 
+    -next iteration of loop
+
+17. break
+    -ends loop
+
+18. long if statements
+    -if (condition or
+         condition or
+         condition):
+
+19. set vs dict
+    -set() 
+    -dict()
+    -{} <-- is an empty dictionary (not a set)
+    -{"item"} <-- is a set (not a dictionary)
+    -add to a set()  -->  set.add(value)
+    -append to a dict() --> dict[key].append(value)
+    -(append to a list)
+
+
+20. worked with prefix and postfix of indeces to get multiplied out values of former/prev and later/post
+
+20b. worked with prefix postfix to find info about start of a chain and length of a chain
+
+21. maxValue = max(value1, value2)
+    minValue = min(value1, value2)
+
+22. string operations 
+    -"" += "strings" + "to" + "add"
+
+23. while loop
+    -if dont know number of iterations, use while loop
+    -use of temporary resseting varaible for double while loop
+
+24. get a good grasp of what index in a list/string you are working with
+    -good grash of what different variables point to different indeces
+
+25. Condition that returns False/less code lines, (can avoid else: in if-else statements sometimes)
+
+26. Draw it out, can help think problem through
+
+
+
+.set time complexity
+    -in hashSet    (T: O(1) on avg   |   T: O(n) worst case)
+    -remove(value), add(value), traversal    (T: O(1) on avg   |   T: O(n) worst case)
+
+.array methods python
+    -append(value)
+    -clear()
+    -copy()    #separate hard copy
+    -count(value)
+    -extend(list)
+    -pop(index)
+    -pop()    #final value
+    -remove(value)
+    -reverse()
+    -sort()
+    -index(value)
+    -insert(index, value)
+    -len(array)
+
+.set methods python
+    -len(set)
+    -add(value)
+    -clear()
+    -copy()
+    -remove(value)
+    -pop(index)
+    -pop()   #final value
+    -union(set2)
+    -many more methods regarding 2 sets
+
+

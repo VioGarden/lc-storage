@@ -1,0 +1,5 @@
+methods 
+1. Merge Sort or Quick Sort
+2. Connect many lists
+3. Bucket sort (3 passes, then switch)
+4. One pass, 

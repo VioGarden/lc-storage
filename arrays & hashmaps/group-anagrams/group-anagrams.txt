@@ -1,0 +1,13 @@
+approaches
+1. (range of letters is from 0-26) key of hashmap is letters added up
+    T: O(m * n)  (total number of input strings * avg string length * 26 letters)
+
+
+
+2. sort then loop over and group
+    T: O((n log n)*(m))
+    S: O(1)
+
+notes
+defaultdict()
+

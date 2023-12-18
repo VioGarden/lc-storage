@@ -1,0 +1,25 @@
+approaches
+1. (1) hashmap, each letter asigned a number for how many occurances
+    T: O(s + t)
+    M: O(s + t)
+
+2. (2) Sorted Method, sort then compare
+    T: O(n^2) if bad sorting system (ie bubble sort)
+    M: O(1)
+
+    T: O(n log n) if good sorting algorithm
+    M: (iffy), could be O(n), or O(1), depends on the situation
+
+
+3. (3) Counter(s) == Counter(t)
+
+4. (4) idk bad
+
+
+
+notes
+.get(keyname,value)
+    -works for dictionaries
+    -keyname (required) what key you want the value from
+    -value (optionary) value to return if key does not exist
+

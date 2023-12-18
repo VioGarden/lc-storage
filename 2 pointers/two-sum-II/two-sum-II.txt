@@ -1,0 +1,7 @@
+Info
+-Only 1 solution
+-Indexes are 1,2,3 not 0,1,2
+-Already sorted
+1. Brute force method
+Iterate over array, for each i, check if following elements add to correct sum
+2. Pointers from edge, if sum too big, lower form right, if sum too small, upper from left

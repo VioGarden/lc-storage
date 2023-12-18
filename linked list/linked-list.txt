@@ -1,0 +1,17 @@
+head.next
+
+head.next.next
+
+self.reverseList(head.next)
+
+not head
+
+newHead = head
+
+dummy = ListNode() 
+
+node.val = node.next.val
+
+dummy = ListNode(0, head)
+
+left = dummy

@@ -1,0 +1,14 @@
+approaches
+
+1. (1) Hash set (check then add to a separate array)
+    T: O(n)
+    S: O(n)
+
+2. (-) sort, then check adjacent duplicates by shifting pointers
+    T: O(n log n)    (pass is O(n), sorting takes longer)
+    S: O(1)
+
+3. (-) brute force for each element 
+    T: O(n^2)
+    S: O(1)
+

@@ -1,0 +1,3 @@
+1.  stack use of list (.append, .pop)
+2. use of hashmap
+3. 

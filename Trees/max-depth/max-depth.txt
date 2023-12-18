@@ -1,0 +1,9 @@
+longest path from root (top) to leaf (lowest)
+
+1. Recursive DFS
+Base Case : nothing --> 0
+1 + max(left, right)
+1 + max(dfs(left), dfs(right))
+
+
+

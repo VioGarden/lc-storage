@@ -1,0 +1,64 @@
+1. Reversing a string 
+    s[::-1]
+
+2. isinstance() --> True or False
+    isinstance(<var>, str) 
+    isinstance(<var>, int)
+
+3. x.is... --> True or False
+    x.isalnum() 
+    x.isalpha()
+    x.isnumeric()
+
+4. pointers
+    -iterate through using index
+    -while loop
+        += increment
+        -= decrement
+
+5. characters and letters, inequalities can be formed
+    "a" < "z"
+    "0" < "9"
+
+6. ord(0) does NOT work, ord("0") does work
+
+7. continue/break can be nested inside a if stament inside the for or while loop
+    while ...
+        if ...
+            continute  # next iteration of while loop
+    for ...
+        if ...
+            break  # breaks for loop
+
+8. decrement/increment **important**
+
+9. nums.sort() 
+    nlogn time, but userful if operation will take n^2 time
+
+10. enumerate useful when checking value to previous value, using both value and index
+
+11. max(a,b) instead of if a>b: b=a 
+
+12. think before coding
+
+13. range(a,b,c)
+
+14. len(height) - 1 (when starting from back)
+    -len(height) value dont count when from front
+    -0 value dont count when from back
+
+15. make sure correct list is getting iterated
+
+16. make sure correct iterable is getting iterated
+
+17. left < right vs left <= right
+
+18. careful when you are incrementing
+    -can increment early when
+        -have former value in a varible
+        -want to compare new varable to former variable
+    -unless not sure, don't increment early or in middle of code
+
+19. max, min, while (friends for pointer problems)
+
+

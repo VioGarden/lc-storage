@@ -1,0 +1,21 @@
+1. If balanced from root node, O(n^2) time complexity
+
+2. If balanced from lowest, each node only once, O(n)
+[T/F, h]
+one false, return false
+
+
+def isBalanced(self, root: Optional[TreeNode]) -> bool:
+    # cannot use outer function because it returns one boolean
+    
+    def dfs(root): # returns boolean and tree height
+        if root == None:
+            return [True, 0]
+        left, right = dfs(root.left), dfs(root.right)
+        
+        #from the root node, is balanced? # abs of left and right heights
+        balanced = left[0] and right[0] and abs(left[1] - right[1]) <= 1
+        # left = [Boolean, height] (so [0] is boolean, [1] is height)
+        
+        return ([balanced, 1 + max(left[1], right[1])])
+    return dfs(root)[0]

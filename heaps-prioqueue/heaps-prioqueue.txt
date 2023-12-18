@@ -1,0 +1,7 @@
+Heap
+    -Add O(logN)
+    -Pop O(logN)
+
+    -min O(1)
+
+Python Does Not Hav Max Heaps, everything in negatives

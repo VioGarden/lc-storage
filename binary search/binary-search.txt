@@ -1,0 +1,15 @@
+1. 2-D arrays, use // and % to find indeces
+
+2. take advantage of sorted stuff
+
+3. use of pointers and indeces 
+
+4. while left <= right
+
+5. mid + 1 or mid - 1
+
+6. searching in chunks (left and right)
+
+7. thinking about all possible cases  (if not too many, helps with code)
+
+8. draw/think it out

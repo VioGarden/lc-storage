@@ -1,0 +1,14 @@
+approaches
+1. Hash map, map the value to index, does target - value exist in hashmap? 
+if not, value : index to hashmap, then return index if found, one pass
+    T: O(n)
+    M: O(n)
+
+2. brute force, loop over array, than array without i
+    T: O(n^2)
+    M: O(1)
+
+
+notes
+enumerate(iterable, start)
+    -r

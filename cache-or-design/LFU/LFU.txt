@@ -1,0 +1,48 @@
+Things learned: 
+_sentinel node  (.prev and .next)
+collections.defaultdict(DoublyLinkedList) // class hashmap
+self._freq[1].append(node) // create hashmap
+DLL pop and append helper functions
+LFU _update helper function
+._minfreq (to help keep track of lowest freq DLL)
+
+
+Data Structure: 
+Double Linked Node 
+    + key: int
+    + value: int
+    + freq: int
+    + prev: Node
+    + next: Node
+
+Double Linked List (aka OrderedDict (Dict + double linked list))
+    - sentinel: Node
+    + size: int
+    + append(node: Node) --> None
+    + pop(node: Nonde) --> Node
+
+LFU 
+    - node: dict[int: key, node: Node]
+    - freq: dict[int freq, lst: DLL]
+    - minfreq: int
+    + get (key: int) --> int
+    + put (key: int, value: int) --> None
+
+Init: 
+Node
+    key, val, freq, prev, next
+DLL
+    _sentinel, _sentinel.next, ._sentinel.prev, ._size
+LFU
+    _size, _capacity, _node, _freq, _minfreq
+
+OrderedDict   O(1)
+.popitem() # delete key from begining
+    (last = True) FIFO (stack like)
+    (last = False) LIFO (queue like)
+.move_to_end(key)   O(1)
+    (key, last = True) move key to end 
+    (key, last = False) move key to start
+
+
+

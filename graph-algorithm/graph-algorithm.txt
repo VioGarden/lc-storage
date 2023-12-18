@@ -1,0 +1,27 @@
+DFS 
+    -Time : O(n)
+    -DS : HashSet
+
+BFS
+    -Time : O(n)
+    -DS : Queue (double ended), HashSet
+
+Union Find (union/combine disjoint sets efficiently)
+    -Time: O(nlogn)
+    -DS : Forest of Trees
+    -Ex: number of connected components by adding edges
+
+Topological Sort
+    -From DFS
+    -Graph that is directed in one way
+    -Time : O(n)
+    -DS : HashSet
+
+Dijkstra's Shortest Path Algorithm
+    -Time : ElogV  # E is edges, V is verticies
+    -DS : Heap or Priority Queue, HashSet
+
+(rare)Prim's/Kruskal's (Minimum Spanning Tree)
+
+(rare) Floyd Warshall's Algorithm
+

@@ -1,0 +1,7 @@
+1. Idea
+-pointer at index 0 or one to start
+-pointer 2 should go up and down, 
+    -if difference of the additions of the two pointers add to to zero
+        -in set(), turn into set
+        -add to list
+do it until pointer 1 gets to 2nd last element

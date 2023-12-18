@@ -1,0 +1,13 @@
+Explaination:
+use edges to advantage
+Binary search has left, mid, anf right pointer
+
+1. find mid value
+2. if mid value is greater than left most value, means we are in left portion of array
+    -if mid value is not greater than left most value, we are in the right portion of array
+3. compare to left most value, 
+    -if less than, can eliminate left portion to the left
+    -if greater than, remove everything from the right
+3. if in right portion
+    - if greater than right edge, search everything to the edge
+    - if less than edge, can eliminate everything to left

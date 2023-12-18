@@ -1,0 +1,17 @@
+1. iterate through s, if alphanumeric and lower, add to str
+    -uses extra memory
+    -uses isalpha()
+
+2. using pointers, 
+    -from edges to inside until they meet or pass, 
+    -decrement or increment
+    -use ascii values
+        -0-->9  ascii  48-->57
+        -A-->Z ascii 65-->90
+        -a-->z ascii 96--122
+    -while not alphanumeric, increment or decrement
+    -O(n) time
+    -O(1) memory
+
+2 code. 
+    -create second function to determine if ascii or not
