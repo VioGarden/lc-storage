@@ -1,3 +1,5 @@
+from collections import deque
+
 def coinChange(coins, amount):
     dp = [float('inf') for _ in range(amount + 1)]
     dp[0] = 0
@@ -41,3 +43,23 @@ def coinChange(coins, amount):
     
     # Return the minimum number of coins needed or -1 if it's not possible to make up the amount.
     return -1 if ans == math.inf else ans
+
+def coinChange(coins, amount):
+    """
+    :type coins: List[int]
+    :type amount: int
+    :rtype: int
+    """
+    q = deque()
+    q.append((0, 0))
+    visited = [True] + [False] * amount
+    while q:
+        val, count = q.popleft()
+        if val == amount:
+            return count
+        for coin in coins:
+            next_val = val + coin
+            if next_val <= amount and not visited[val + coin]:
+                q.append((val + coin, count + 1))
+                visited[val + coin] = True
+    return -1
